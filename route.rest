@@ -25,3 +25,23 @@ Content-Type: application/json
 {
     "name": "New name"
 }
+
+
+###
+GET http://localhost:3008/items
+
+###
+POST http://localhost:3008/items
+Content-Type: application/json
+
+{
+    "name": "Gumy do ćwiczeń",
+    "value": 2,
+    "price": 30,
+    "shortDescription": "Idealna do treningu z regulowanym obciążeniem",
+    "description": "Idealna do treningu rehabilitacyjnego, czerwona daje większe obciążenie, zaś niebieska mniejsze obciążenie. Wykonuj ćwiczenia zgodnie z filmikami nagranymi przez fizjoterapeutę",
+    "picture": "assets/img/products/band.jpg"
+}
+
+###
+DELETE http://localhost:3008/items/603a14ea1b3e550de0080b60

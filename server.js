@@ -16,6 +16,7 @@ app.use(express.json())
 app.use(cors())
 
 const subscribersRouter = require('./routes/subscribers')
+const itemsRouter = require('./routes/items')
 app.use('/subscribers', subscribersRouter)
-
+app.use('/items', itemsRouter)
 app.listen(3008, () => console.log('server started'))
