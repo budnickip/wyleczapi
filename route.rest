@@ -1,0 +1,27 @@
+GET http://localhost:3008/subscribers
+
+###
+
+GET http://localhost:3008/subscribers/603960277bcfd33fe07a079c
+
+###
+
+POST http://localhost:3008/subscribers
+Content-Type: application/json
+
+{
+    "name": "Patryk Baran",
+    "subscribedToChannel": "lipa"
+}
+
+###
+DELETE http://localhost:3008/subscribers/60391f35a238bd071412c760
+
+
+###
+PATCH  http://localhost:3008/subscribers/60391f5aa238bd071412c762
+Content-Type: application/json
+
+{
+    "name": "New name"
+}
