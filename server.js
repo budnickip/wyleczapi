@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
+const port = process.env.PORT || 3008
 var cors = require('cors')
 
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true})
@@ -19,4 +20,4 @@ const subscribersRouter = require('./routes/subscribers')
 const itemsRouter = require('./routes/items')
 app.use('/subscribers', subscribersRouter)
 app.use('/items', itemsRouter)
-app.listen(3008, () => console.log('server started'))
+app.listen(port, () => console.log('server started'))
