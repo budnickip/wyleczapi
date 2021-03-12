@@ -1,10 +1,12 @@
 ### Documentation
 
-You have to download this API and add .env file with 
+You have to download this API, write in console npm install and add .env file with content like below:
 
 DATABASE_URL=mongodb+srv://[username]:[password]cluster0.dyzu6.mongodb.net/[dbname]?retryWrites=true&w=majority
 
-and replace [username], [password] and [dbname] with your data from mongodb
+and replace [username], [password] and [dbname] with data from your mongodb account
+
+To start app type npm run devStart in console
 
 ## example requests:
 
