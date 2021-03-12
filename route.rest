@@ -45,3 +45,14 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3008/items/603a14ea1b3e550de0080b60
+
+###
+POST http://localhost:3008/auth/register
+Content-Type: application/json
+
+{
+    "first_name": "Paulina",
+    "last_name": "Baran",
+    "email": "baran@onet.pl",
+    "password": "tajne3221"
+}
