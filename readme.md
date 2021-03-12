@@ -1,4 +1,4 @@
-### Documentation
+# Documentation
 
 You have to download this API, write in console npm install and add .env file with content like below:
 
@@ -10,15 +10,15 @@ To start app type npm run devStart in console
 
 ## example requests:
 
-# Get every item from data base
+### Get every item from data base
 
 GET http://localhost:3008/items
 
-# Get one item by id from data base
+### Get one item by id from data base
 
 GET http://localhost:3008/:id
 
-# Send new item to data base
+### Send new item to data base
 
 POST http://localhost:3008/items
 Content-Type: application/json
@@ -32,11 +32,11 @@ Content-Type: application/json
     "picture": "assets/img/products/band.jpg"
 }
 
-# Delete item by id from data base
+### Delete item by id from data base
 
 DELETE http://localhost:3008/items/:id
 
-# Change one item by id with PATCH
+### Change one item by id with PATCH
 
 PATCH  http://localhost:3008/items/:id
 Content-Type: application/json
@@ -45,14 +45,14 @@ Content-Type: application/json
     "name": "Czerwone Gumy do Ćwiczeń"
 }
 
-# Add new user to data base - password will be hashed and saved
+### Add new user to data base - password will be hashed and saved
 
 POST http://localhost:3008/auth/register
 Content-Type: application/json
 
 {
     "first_name": "Paulina",
-    "last_name": "Baran",
-    "email": "baran@onet.pl",
-    "password": "tajne3221"
+    "last_name": "Kowalska",
+    "email": "pkowalska@gmail.com",
+    "password": "secret321"
 }
